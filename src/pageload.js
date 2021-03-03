@@ -10,7 +10,12 @@ const pageLoad = (function() {
         title.id = 'title';
         title.textContent = 'Kermanshah';
 
+        let description = document.createElement('p');
+        description.id = 'descr';
+        description.textContent = 'Traditional. Iranian. Food.'
+
         header.appendChild(title);
+        header.appendChild(description);
         content.appendChild(header);
     }
 
