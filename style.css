@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-image: url('img/107592.jpg');
+}
+
+#main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    'header'
+    'content'
+    'footer';
+}
+
+#header {
+    display: grid;
+    grid-area: header;
+    grid-template-rows: 10vh 4vh 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    '. title nav'
+    '. descr .';
+    place-items: center;
+    background-color: black;
+    color: white;
+}
+
+#title {
+    display: grid;
+    grid-area: title;
+    font-size: 3em;
+    align-content: center;
+}
+
+#descr {
+    display: grid;
+    grid-area: descr;
+    align-self: end;
+}
