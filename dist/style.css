@@ -5,10 +5,10 @@ body {
 
 #main {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 17vh 1fr 10vh;
     grid-template-areas:
     'header'
-    'content'
+    'contentBox'
     'footer';
 }
 
@@ -74,9 +74,30 @@ body {
     cursor: pointer;
 }
 
+#content {
+    display: grid;
+    grid-area: contentBox;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    '. . .'
+    '. infoBox .'
+    '. . .'
+    ;
+    flex-grow: 1;
+}
+
+#homeContainer {
+    display: grid;
+    grid-area: infoBox;
+    background-color: black;
+    color: white;
+}
+
 #footer {
     display: grid;
     grid-area: footer;
     background-color: black;
     color: white;
+    opacity: 0.9;
 }

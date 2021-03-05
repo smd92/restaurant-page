@@ -19,6 +19,13 @@ const pageLoad = (function() {
         main.appendChild(header);
     }
 
+    function createContentDiv() {
+        let contentDiv = document.createElement('div');
+        contentDiv.id = 'content';
+
+        main.appendChild(contentDiv);
+    }
+
     function createNavigation() {
         let navBar = document.createElement('div');
         navBar.id = 'navBar';
@@ -55,6 +62,7 @@ const pageLoad = (function() {
     return {
         createHeader,
         createNavigation,
+        createContentDiv,
         createFooter
     }
 })();
