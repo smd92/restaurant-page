@@ -4,3 +4,4 @@ This project is part of the curriculum at https://www.theodinproject.com/
 - npm, webpack
 - further DOM excercise
 # Live Demo
+https://smd92.github.io/restaurant-page
