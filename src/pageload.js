@@ -1,6 +1,6 @@
 const pageLoad = (function() {
 
-    const content = document.querySelector('#content');
+    const main = document.querySelector('#main');
 
     function createHeader() {
         let header = document.createElement('div');
@@ -16,11 +16,46 @@ const pageLoad = (function() {
 
         header.appendChild(title);
         header.appendChild(description);
-        content.appendChild(header);
+        main.appendChild(header);
+    }
+
+    function createNavigation() {
+        let navBar = document.createElement('div');
+        navBar.id = 'navBar';
+
+        let navHome = document.createElement('p');
+        navHome.id = 'navHome';
+        navHome.classList.add('navButton');
+        navHome.textContent = 'Home';
+
+        let navMenu = document.createElement('p');
+        navMenu.id = 'navMenu';
+        navMenu.classList.add('navButton');
+        navMenu.textContent = 'Menu';
+
+        let navContact = document.createElement('p');
+        navContact.id = 'navContact';
+        navContact.classList.add('navButton');
+        navContact.textContent = 'Contact';
+
+        let header = document.getElementById('header');
+        header.appendChild(navBar);
+        navBar.appendChild(navHome);
+        navBar.appendChild(navMenu);
+        navBar.appendChild(navContact);
+    }
+
+    function createFooter() {
+        let footer = document.createElement('div');
+        footer.id = 'footer';
+
+        main.appendChild(footer);
     }
 
     return {
-        createHeader
+        createHeader,
+        createNavigation,
+        createFooter
     }
 })();
 

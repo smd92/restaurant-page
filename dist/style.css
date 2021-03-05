@@ -15,25 +15,68 @@ body {
 #header {
     display: grid;
     grid-area: header;
-    grid-template-rows: 10vh 4vh 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 7vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    '. title nav'
-    '. descr .';
+    '. . title . .'
+    '. . descr navbar .';
     place-items: center;
     background-color: black;
     color: white;
+    font-family: 'Cinzel', serif;
+    opacity: 0.9;
 }
 
 #title {
     display: grid;
     grid-area: title;
-    font-size: 3em;
-    align-content: center;
+    font-size: 4em;
+}
+
+#title:hover {
+    cursor: pointer;
 }
 
 #descr {
     display: grid;
     grid-area: descr;
     align-self: end;
+    font-size: 1em;
+}
+
+#navBar {
+    display: grid;
+    grid-area: navbar;
+    grid-template-columns: 1fr 5vw 5vw 5vw 1fr;
+    grid-template-areas: '. navHome navMenu navContact .';
+    place-items: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+#navHome {
+    display: grid;
+    grid-area: navHome;
+}
+
+#navMenu {
+    display: grid;
+    grid-area: navMenu;
+}
+
+#navContact {
+    display: grid;
+    grid-area: navContact;
+}
+
+.navButton:hover {
+    cursor: pointer;
+}
+
+#footer {
+    display: grid;
+    grid-area: footer;
+    background-color: black;
+    color: white;
 }
