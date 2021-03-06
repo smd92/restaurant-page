@@ -1,29 +1,28 @@
 body {
     margin: 0;
-    background-image: url('img/107592.jpg');
+    background-image: url("img/107592.jpg");
 }
 
 #main {
     display: grid;
-    grid-template-rows: 17vh 1fr 10vh;
+    grid-template-rows: 17vh 1fr;
     grid-template-areas:
-    'header'
-    'contentBox'
-    'footer';
+    "header"
+    "contentBox";
 }
 
 #header {
     display: grid;
     grid-area: header;
     grid-template-rows: 10vh 7vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    '. . title . .'
-    '. . descr navbar .';
+    ". title ."
+    ". navbar .";
     place-items: center;
     background-color: black;
     color: white;
-    font-family: 'Cinzel', serif;
+    font-family: "Cinzel", serif;
     opacity: 0.9;
 }
 
@@ -37,18 +36,11 @@ body {
     cursor: pointer;
 }
 
-#descr {
-    display: grid;
-    grid-area: descr;
-    align-self: end;
-    font-size: 1em;
-}
-
 #navBar {
     display: grid;
     grid-area: navbar;
     grid-template-columns: 1fr 5vw 5vw 5vw 1fr;
-    grid-template-areas: '. navHome navMenu navContact .';
+    grid-template-areas: ". navHome navMenu navContact .";
     place-items: center;
     background-color: black;
     color: white;
@@ -80,9 +72,9 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-    '. . .'
-    '. infoBox .'
-    '. . .'
+    ". . ."
+    ". infoBox ."
+    ". . ."
     ;
     flex-grow: 1;
 }
@@ -95,9 +87,29 @@ body {
 }
 
 #footer {
-    display: grid;
-    grid-area: footer;
+    position: absolute;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
     background-color: black;
     color: white;
     opacity: 0.9;
+}
+
+#footerContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 10vh 1fr;
+    grid-template-areas: 
+    ". . ."
+    ". githubLogo ."
+    ". . .";
+    place-items: center;
+}
+
+#githubLogo {
+    grid-area: githubLogo;
+    background-image: url("img/GitHub-Mark-Light-64px.png");
+    width: 100%;
+    height: 100%;
 }
