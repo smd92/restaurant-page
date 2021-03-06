@@ -54,13 +54,24 @@ const pageLoad = (function() {
         let footerContent = document.createElement("div");
         footerContent.id = "footerContent";
 
-        let githubLogo = document.createElement("div");
-        githubLogo.id = "githubLogo";
-        githubLogo.textContent = "built by smd92";
+        let builtBy = document.createElement("p");
+        builtBy.id = "builtBy";
+        builtBy.textContent = "built by smd92";
+
+        let gitHubLink = document.createElement("a");
+        gitHubLink.id = "gitHubLink";
+        gitHubLink.setAttribute("href", "https://github.com/smd92");
+        gitHubLink.setAttribute("target", "_blank");
+
+        let gitHubLogo = document.createElement("img");
+        gitHubLogo.id = "gitHubLogo";
+        gitHubLogo.setAttribute("src", "/dist/img/GitHub-Mark-Light-32px.png");
 
         main.appendChild(footer);
         footer.appendChild(footerContent);
-        footerContent.appendChild(githubLogo);
+        footerContent.appendChild(builtBy);
+        footerContent.appendChild(gitHubLink);
+        gitHubLink.appendChild(gitHubLogo);
     }
 
     return {
