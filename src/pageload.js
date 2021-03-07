@@ -54,9 +54,8 @@ const pageLoad = (function() {
         let footerContent = document.createElement("div");
         footerContent.id = "footerContent";
 
-        let builtBy = document.createElement("p");
+        let builtBy = document.createElement("div");
         builtBy.id = "builtBy";
-        builtBy.textContent = "built by smd92";
 
         let gitHubLink = document.createElement("a");
         gitHubLink.id = "gitHubLink";
@@ -65,12 +64,12 @@ const pageLoad = (function() {
 
         let gitHubLogo = document.createElement("img");
         gitHubLogo.id = "gitHubLogo";
-        gitHubLogo.setAttribute("src", "./dist/img/GitHub-Mark-Light-32px.png");
+        gitHubLogo.setAttribute("src", "/dist/img/GitHub-Mark-Light-32px.png");
 
         main.appendChild(footer);
         footer.appendChild(footerContent);
         footerContent.appendChild(builtBy);
-        footerContent.appendChild(gitHubLink);
+        builtBy.appendChild(gitHubLink);
         gitHubLink.appendChild(gitHubLogo);
     }
 

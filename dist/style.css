@@ -7,16 +7,17 @@ body {
 
 #main {
     display: grid;
-    grid-template-rows: 17vh 1fr;
+    grid-template-rows: 17vh 73vh;
     grid-template-areas:
     "header"
     "contentBox";
+    place-items: stretch;
 }
 
 #header {
     display: grid;
     grid-area: header;
-    grid-template-rows: 10vh 7vh;
+    grid-template-rows: 10vh 6.5vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
     ". title ."
@@ -24,7 +25,8 @@ body {
     place-items: center;
     background-color: black;
     color: white;
-    opacity: 0.9;
+    border-bottom: solid;
+    border-color: rgb(255, 187, 0);
 }
 
 #title {
@@ -40,12 +42,13 @@ body {
 #navBar {
     display: grid;
     grid-area: navbar;
-    grid-template-columns: 1fr 5vw 5vw 5vw 1fr;
-    grid-template-areas: ". navHome navMenu navContact .";
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-template-areas: "navHome navMenu navContact";
     place-items: center;
     background-color: black;
     color: white;
-    font-weight: bold;
+    border-top: solid 1px;
+    border-color: rgb(255, 187, 0);
 }
 
 #navHome {
@@ -63,28 +66,27 @@ body {
     grid-area: navContact;
 }
 
+.navButton {
+    width: 100%;
+    height: 100%;
+    place-content: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    transition: 0.7s;
+}
+
 .navButton:hover {
     cursor: pointer;
+    background-color: rgb(61, 60, 60);
+    color: white;
 }
 
 #content {
     display: grid;
     grid-area: contentBox;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 50vh 1fr;
-    grid-template-areas: 
-    ". . ."
-    ". infoBox ."
-    ". . ."
-    ;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     flex-grow: 1;
-}
-
-#homeContainer {
-    display: grid;
-    grid-area: infoBox;
-    background-color: black;
-    color: white;
 }
 
 #footer {
@@ -94,7 +96,8 @@ body {
     width: 100%;
     background-color: black;
     color: white;
-    opacity: 0.9;
+    border-top: solid;
+    border-color: rgb(255, 187, 0);
 }
 
 #footerContent {
@@ -123,3 +126,42 @@ body {
 #gitHubLink:hover {
     background-color: rgba(138, 138, 138, 0.534);
 }
+
+/* CONTENT */
+
+.tile {
+    opacity: 0.8;
+}
+
+#homeInfoBox {
+    display: grid;
+    grid-column: 3 / span 3;
+    grid-row: 2 / 5;
+    grid-template-columns: 1fr 40vw 1fr;
+    grid-template-rows: 10vh 10vh 1fr;
+    grid-template-areas:
+    ". homeHeading ."
+    ". homeTextOne ."
+    ". homeTextTwo .";
+    background-color: black;
+    color: white;
+}
+
+#homeHeading {
+    display: grid;
+    grid-area: homeHeading;
+    font-size: 2em;
+    text-align: center;
+}
+
+#homeTextOne {
+    display: grid;
+    grid-area: homeTextOne;
+}
+
+#homeTextTwo {
+    display: grid;
+    grid-area: homeTextTwo;
+}
+
+/* CONTENT END */
