@@ -43,6 +43,7 @@ body {
     display: grid;
     grid-area: navbar;
     grid-template-columns:  1fr 1fr 1fr ;
+    grid-template-rows: 6.5vh;
     grid-template-areas: "navHome navMenu navContact";
     place-items: center;
     background-color: black;
