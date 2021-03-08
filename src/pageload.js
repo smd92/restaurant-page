@@ -1,11 +1,11 @@
-const pageLoad = (function() {
+const pageLoad = (function () {
 
     const main = document.querySelector("#main");
 
     function createHeader() {
         let header = document.createElement("div");
         header.id = "header";
-        
+
         let title = document.createElement("p");
         title.id = "title";
         title.textContent = "Kermanshah";

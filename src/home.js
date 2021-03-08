@@ -1,4 +1,4 @@
-const HomeContent = (function() {
+const HomeContent = (function () {
 
     function createHomeContent() {
         const content = document.getElementById("content");
@@ -18,7 +18,7 @@ const HomeContent = (function() {
         let homeTextTwo = document.createElement("p");
         homeTextTwo.id = "homeTextTwo";
         homeTextTwo.textContent = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor";
-        
+
         homeInfoBox.appendChild(homeHeading);
         homeInfoBox.appendChild(homeTextOne);
         homeInfoBox.appendChild(homeTextTwo);

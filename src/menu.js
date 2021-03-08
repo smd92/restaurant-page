@@ -1,4 +1,4 @@
-const menuContent = (function() {
+const menuContent = (function () {
 
     const content = document.getElementById("#content");
 
