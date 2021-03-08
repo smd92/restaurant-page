@@ -1,4 +1,4 @@
-const homeContent = (function() {
+const HomeContent = (function() {
 
     function createHomeContent() {
         const content = document.getElementById("content");
@@ -30,4 +30,4 @@ const homeContent = (function() {
     }
 })();
 
-export default homeContent;
+export default HomeContent;
