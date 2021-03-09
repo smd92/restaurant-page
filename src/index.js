@@ -1,8 +1,6 @@
-import homeContent from "./home";
-
 //rendering page on load
 import pageLoad from "/src/pageload.js";
-import HomeContent from "/src/home.js";
+import homeContent from "/src/home.js";
 import menuContent from "/src/menu.js";
 
 pageLoad.createHeader();
@@ -10,10 +8,10 @@ pageLoad.createNavigation();
 pageLoad.createContentDiv();
 pageLoad.createFooter();
 //home content
-HomeContent.createHomeContent();
+homeContent.createhomeContent();
 
 //nav-tab switching logic
-let switchTabs = (function () {
+const switchTabs = (function () {
     let contentDiv = document.getElementById("content");
     let contentDivChildren = contentDiv.childNodes;
     let tabs = document.getElementsByClassName("navButton");
@@ -25,7 +23,7 @@ let switchTabs = (function () {
             }
             switch (e.target.id) {
                 case "navHome":
-                    HomeContent.createHomeContent();
+                    homeContent.createhomeContent();
                     break;
                 case "navMenu":
                     //render menu

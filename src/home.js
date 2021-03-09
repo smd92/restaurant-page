@@ -30,4 +30,4 @@ const HomeContent = (function () {
     }
 })();
 
-export default HomeContent;
+export default homeContent;

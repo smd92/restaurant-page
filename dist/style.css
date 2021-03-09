@@ -129,7 +129,6 @@ body {
 }
 
 /* CONTENT */
-
 .tile {
     opacity: 0.8;
 }
@@ -164,5 +163,4 @@ body {
     display: grid;
     grid-area: homeTextTwo;
 }
-
 /* CONTENT END */
