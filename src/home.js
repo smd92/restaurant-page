@@ -1,4 +1,4 @@
-const HomeContent = (function () {
+const homeContent = (function () {
 
     function createHomeContent() {
         const content = document.getElementById("content");
