@@ -1,6 +1,9 @@
 body {
     margin: 0;
     background-image: url("img/107592.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     overflow: hidden;
     font-family: "Cinzel", serif;
 }
@@ -129,10 +132,12 @@ body {
 }
 
 /* CONTENT */
+
 .tile {
     opacity: 0.8;
 }
 
+/* HOME */
 #homeInfoBox {
     display: grid;
     grid-column: 3 / span 3;
@@ -162,5 +167,28 @@ body {
 #homeTextTwo {
     display: grid;
     grid-area: homeTextTwo;
+}
+/* HOME END */
+
+/* MENU */
+#menuDiv {
+    display: grid;
+    grid-column: 3 / span 3;
+    grid-row: 2 / 5;
+    grid-template-columns: 1fr 40vw 1fr;
+    grid-template-rows: 10vh 10vh 1fr;
+    grid-template-areas:
+    ". menuHeading ."
+    ". . ."
+    ". . .";
+    background-color: black;
+    color: white;
+}
+
+#menuHeading {
+    display: grid;
+    grid-area: menuHeading;
+    font-size: 2em;
+    text-align: center;
 }
 /* CONTENT END */

@@ -36,7 +36,7 @@ const switchTabsManager = (function () {
                 homeContent.createHomeContent();
                 break;
             case "navMenu":
-                //render menu
+                menuContent.createMenuContent();
                 break;
             case "navContact":
                 //render contact
