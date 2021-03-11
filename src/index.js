@@ -27,6 +27,13 @@ const switchTabsManager = (function () {
                 contentDivChildren[k].remove();
             }
             switchTabs(e.target.id);
+            //highlight chosen tab
+            tabs[i].classList.add("navButtonChecked");
+            for (let k = 0; k < tabs.length; k++) {
+                if (tabs[k].classList.contains("navButtonChecked") === true && tabs[k].id != e.target.id) {
+                    tabs[k].classList.remove("navButtonChecked");
+                }
+            }
         })
     }
 
