@@ -85,6 +85,10 @@ body {
     color: white;
 }
 
+.navButtonChecked {
+    background-color: rgb(61, 60, 60);
+}
+
 #content {
     display: grid;
     grid-area: contentBox;
@@ -107,11 +111,13 @@ body {
 #footerContent {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 3vh 4vh 3vh;
     grid-template-areas:
-    ". gitHubLink ."
-    ". builtBy .";
+    ". . ."
+    ". builtBy ."
+    ". . .";
     justify-items: center;
+    align-items: center;
     font-size: 0.9em;
 }
 
@@ -132,10 +138,18 @@ body {
 }
 
 /* CONTENT */
-
 .tile {
     opacity: 0.8;
 }
+/*
+.tile {
+    animation: fadeIn ease-in 3s;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 0.4;}
+}
+*/
 
 /* HOME */
 #homeInfoBox {
