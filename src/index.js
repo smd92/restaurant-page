@@ -2,6 +2,7 @@
 import pageLoad from "/src/pageload.js";
 import homeContent from "/src/home.js";
 import menuContent from "/src/menu.js";
+import contactContent from "/src/contact.js";
 
 pageLoad.createHeader();
 pageLoad.createNavigation();
@@ -43,10 +44,10 @@ const switchTabsManager = (function () {
                 homeContent.createHomeContent();
                 break;
             case "navMenu":
-                menuContent.createMenuContent();
+                menuContent.createMenuFrame();
                 break;
             case "navContact":
-                //render contact
+                contactContent.createContactFrame();
                 break;
         }
     }

@@ -9,6 +9,7 @@ const homeContent = (function () {
 
         let homeHeading = document.createElement("p");
         homeHeading.id = "homeHeading";
+        homeHeading.classList.add("subHeading");
         homeHeading.textContent = "Welcome to Kermanshah";
 
         let homeTextOne = document.createElement("p");

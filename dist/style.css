@@ -92,8 +92,8 @@ body {
 #content {
     display: grid;
     grid-area: contentBox;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     flex-grow: 1;
 }
 
@@ -131,6 +131,7 @@ body {
     grid-area: gitHubLink;
     align-self: end;
     border-radius: 16px;
+    transition: 0.5s;
 }
 
 #gitHubLink:hover {
@@ -140,6 +141,8 @@ body {
 /* CONTENT */
 .tile {
     opacity: 0.8;
+    background-color: black;
+    color: white;
 }
 /*
 .tile {
@@ -151,26 +154,30 @@ body {
 }
 */
 
+.subHeading {
+    border-bottom: solid 1px;
+    border-color: rgb(255, 187, 0);
+    font-size: 2em;
+}
+
 /* HOME */
 #homeInfoBox {
     display: grid;
-    grid-column: 3 / span 3;
-    grid-row: 2 / 5;
+    grid-column: 5 / span 6;
+    grid-row: 3 / 9;
     grid-template-columns: 1fr 40vw 1fr;
     grid-template-rows: 10vh 10vh 1fr;
     grid-template-areas:
     ". homeHeading ."
     ". homeTextOne ."
     ". homeTextTwo .";
-    background-color: black;
-    color: white;
 }
 
 #homeHeading {
     display: grid;
     grid-area: homeHeading;
-    font-size: 2em;
-    text-align: center;
+    align-self: center;
+    justify-self: center;
 }
 
 #homeTextOne {
@@ -185,24 +192,70 @@ body {
 /* HOME END */
 
 /* MENU */
-#menuDiv {
+#menuContainer {
     display: grid;
-    grid-column: 3 / span 3;
-    grid-row: 2 / 5;
+    grid-column: 5 / span 6;
+    grid-row: 2 / 10;
     grid-template-columns: 1fr 40vw 1fr;
-    grid-template-rows: 10vh 10vh 1fr;
+    grid-template-rows: 10vh 1fr;
     grid-template-areas:
     ". menuHeading ."
-    ". . ."
-    ". . .";
-    background-color: black;
-    color: white;
+    ". menuDiv .";
+    overflow: auto;
 }
 
 #menuHeading {
     display: grid;
     grid-area: menuHeading;
-    font-size: 2em;
-    text-align: center;
+    align-self: center;
+    justify-self: center;
 }
+
+#menuDiv {
+    display: grid;
+    grid-area: menuDiv;
+    grid-template-columns: 1fr 30vw 10vw 1fr;
+    grid-template-rows: repeat(8, 10vh);
+}
+/* MENU END */
+
+/* CONTACT */
+#contactContainer {
+    display: grid;
+    grid-column: 5 / span 6;
+    grid-row: 3 / 9;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh 1fr;
+    grid-template-areas: 
+    "contactHeading"
+    "contactContent";
+}
+
+#contactHeading {
+    display: grid;
+    grid-area: contactHeading;
+    align-self: center;
+    justify-self: center;
+}
+
+#contactContent {
+    display: grid;
+    grid-area: contactContent;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "contactInfoBox googleMaps";
+}
+
+#contactInfoBox {
+    display: grid;
+    grid-area: contactInfoBox;
+}
+
+#googleMaps {
+    grid-area: googleMaps;
+    align-self: center;
+    justify-self: center;
+}
+/* CONTACT END */
 /* CONTENT END */
