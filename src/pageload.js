@@ -64,7 +64,7 @@ const pageLoad = (function () {
 
         let gitHubLogo = document.createElement("img");
         gitHubLogo.id = "gitHubLogo";
-        gitHubLogo.setAttribute("src", "/dist/img/GitHub-Mark-Light-32px.png");
+        gitHubLogo.setAttribute("src", "./img/GitHub-Mark-Light-32px.png");
 
         main.appendChild(footer);
         footer.appendChild(footerContent);

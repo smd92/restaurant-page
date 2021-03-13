@@ -222,7 +222,7 @@ body {
 /* CONTACT */
 #contactContainer {
     display: grid;
-    grid-column: 5 / span 6;
+    grid-column: 5 / span 4;
     grid-row: 3 / 9;
     grid-template-columns: 100%;
     grid-template-rows: 10vh 1fr;
@@ -241,10 +241,10 @@ body {
 #contactContent {
     display: grid;
     grid-area: contactContent;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 100%;
     grid-template-areas: 
-    "contactInfoBox googleMaps";
+    "contactInfoBox";
 }
 
 #contactInfoBox {
@@ -253,9 +253,13 @@ body {
 }
 
 #googleMaps {
-    grid-area: googleMaps;
+    display: grid;
+    grid-column: 9 / span 4;
+    grid-row: 3 / 6;
     align-self: center;
     justify-self: center;
+    max-width: 100%;
+    max-height: 100%;
 }
 /* CONTACT END */
 /* CONTENT END */
