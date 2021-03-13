@@ -43,7 +43,7 @@ const pageLoad = (function () {
         let header = document.getElementById("header");
         header.appendChild(navBar);
         navBar.appendChild(navHome);
-        navBar.appendChild(navMenu)
+        navBar.appendChild(navMenu);
         navBar.appendChild(navContact);
     }
 
