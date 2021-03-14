@@ -24,7 +24,7 @@ const switchTabsManager = (function () {
 
     for (let i = 0; i < tabs.length; i++) {
         tabs[i].addEventListener("click", (e) => {
-            for (let k = 0; k < contentDivChildren.length; k++) {
+            for (let k = contentDivChildren.length - 1; k >= 0; k--) {
                 contentDivChildren[k].remove();
             }
             switchTabs(e.target.id);

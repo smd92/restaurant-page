@@ -20,7 +20,7 @@ const menuContent = (function () {
         content.appendChild(menuContainer);
     }
 
-    function populateMenu() {
+    function populateMenuFrame() {
         
     }
 

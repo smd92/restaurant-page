@@ -35,6 +35,10 @@ const contactContent = (function() {
         content.appendChild(googleMaps);
         content.appendChild(contactContainer);
     }
+
+    function populateContactFrame() {
+        
+    }
     
     return {
         createContactFrame
