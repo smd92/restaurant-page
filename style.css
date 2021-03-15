@@ -253,15 +253,30 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: repeat(6, 16%);
     grid-template-areas:
+    "."
     "street"
     "city"
-    "phone"
-    "email";
+    "email"
+    "."
+    ".";
+}
+
+#contactStreet {
+    grid-area: street;
+}
+
+#contactCity {
+    grid-area: city;
+}
+
+#contactEmail {
+    grid-area: email;
 }
 
 .contactDetail {
     align-items: center;
     justify-self: center;
+    font-size: 1.5em;
 }
 
 #googleMaps {
