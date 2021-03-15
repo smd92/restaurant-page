@@ -34,10 +34,28 @@ const contactContent = (function() {
         contactContainer.appendChild(contactContent);
         content.appendChild(googleMaps);
         content.appendChild(contactContainer);
+        populateContactFrame(contactInfoBox);
     }
 
-    function populateContactFrame() {
+    function populateContactFrame(contactInfoBox) {
+        let street = document.createElement("p");
+        street.id = "contactStreet";
+        street.classList.add("contactDetail");
+        street.textContent = "Qasem Soleimani Street 79";
+
+        let city = document.createElement("p");
+        city.id = "contactCity";
+        city.classList.add("contactDetail");
+        city.textContent = "Kermanshah";
         
+        let email = document.createElement("p");
+        email.id = "contactEmail";
+        email.classList.add("contactDetail");
+        email.textContent = "contact@kermanshah-restaurant.ir";
+
+        contactInfoBox.appendChild(street);
+        contactInfoBox.appendChild(city);
+        contactInfoBox.appendChild(email);
     }
     
     return {
