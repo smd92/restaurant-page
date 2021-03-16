@@ -21,7 +21,19 @@ const menuContent = (function () {
     }
 
     function populateMenuFrame() {
-        
+        let meals = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight"];
+
+        meals.forEach((meal) => {
+            createMeals(meal);
+        })
+    }
+
+    function createMeals(index) {
+        let meal = document.createElement("p");
+        let price = document.createElement("p");
+
+        meal.id = `meal${index}`;
+        price.id = `price${index}`;
     }
 
     return {

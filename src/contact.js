@@ -21,9 +21,9 @@ const contactContent = (function() {
         let googleMaps = document.createElement("div");
         googleMaps.id = "googleMaps";
         let googleMapsIframe = document.createElement("iframe");
-        googleMapsIframe.setAttribute("src", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52712.76035985219!2d47.06892050790624!3d34.33654092671006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ffaed9fb779436f%3A0xdfd40ef2ccc68ad3!2sKermanshah%2C%20Kermanshah%20Province%2C%20Iran!5e0!3m2!1sen!2sde!4v1615539622292!5m2!1sen!2sde");
-        googleMapsIframe.setAttribute("height", "450");
-        googleMapsIframe.setAttribute("width", "600");
+        googleMapsIframe.setAttribute("src", "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80587.51576961517!2d47.04987713123547!3d34.33774105400923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ffaed9fb779436f%3A0xdfd40ef2ccc68ad3!2zS2VybcSBbnNjaMSBaCwgSXJhbg!5e0!3m2!1sde!2sde!4v1615928472045!5m2!1sde!2sde");
+        googleMapsIframe.setAttribute("height", "100%");
+        googleMapsIframe.setAttribute("width", "100%");
         googleMapsIframe.setAttribute("style", "border:0;");
         googleMapsIframe.setAttribute("allowfullscreen", "");
         googleMapsIframe.setAttribute("loading", "lazy");
