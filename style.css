@@ -216,6 +216,15 @@ body {
     grid-area: menuDiv;
     grid-template-columns: 1fr 30vw 10vw 1fr;
     grid-template-rows: repeat(8, 10vh);
+    grid-template-areas: 
+    "mealOne priceOne"
+    "mealTwo priceTwo"
+    "mealThree priceThree"
+    "mealFour priceFour"
+    "mealFive priceFive"
+    "mealSix priceSix"
+    "mealSeven priceSeven"
+    "mealEight priceEight";
 }
 /* MENU END */
 
@@ -281,12 +290,12 @@ body {
 
 #googleMaps {
     display: grid;
-    grid-column: 9 / span 3;
+    grid-column: 9 / span 4;
     grid-row: 3 / 9;
     align-self: center;
     justify-self: center;
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 /* CONTACT END */
 /* CONTENT END */
