@@ -45,6 +45,7 @@ const switchTabsManager = (function () {
                 break;
             case "navMenu":
                 menuContent.createMenuFrame();
+                menuContent.populateMenuFrame();
                 break;
             case "navContact":
                 contactContent.createContactFrame();
