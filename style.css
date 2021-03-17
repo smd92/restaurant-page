@@ -183,6 +183,7 @@ body {
 #homeTextOne {
     display: grid;
     grid-area: homeTextOne;
+    margin-top: 2em;
 }
 
 #homeTextTwo {
@@ -214,7 +215,7 @@ body {
 #menuDiv {
     display: grid;
     grid-area: menuDiv;
-    grid-template-columns: 1fr 30vw 10vw 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(8, 10vh);
     grid-template-areas: 
     "mealOne priceOne"
@@ -225,6 +226,12 @@ body {
     "mealSix priceSix"
     "mealSeven priceSeven"
     "mealEight priceEight";
+}
+
+.menuItem {
+    align-self: center;
+    justify-self: center;
+    font-size: 1.5em;
 }
 /* MENU END */
 
