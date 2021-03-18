@@ -41,7 +41,7 @@ const contactContent = (function() {
         let street = document.createElement("p");
         street.id = "contactStreet";
         street.classList.add("contactDetail");
-        street.textContent = "Qassem Soleimani Street 79";
+        street.textContent = "Qasem Soleimani Street 79";
 
         let city = document.createElement("p");
         city.id = "contactCity";
