@@ -189,6 +189,7 @@ body {
 #homeTextTwo {
     display: grid;
     grid-area: homeTextTwo;
+    margin-top: 3rem;
 }
 /* HOME END */
 
